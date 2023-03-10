@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- toko.pegawai tree view -->
+    <record id="toko_pegawai_view_tree" model="ir.ui.view">
+        <field name="name">toko.pegawai.view.tree</field>
+        <field name="model">toko.pegawai</field>
+        <field name="arch" type="xml">
+            <tree>
+                <!-- Add your fields here -->
+                <field name="name"/>
+                <field name="no_telp"/>
+                <field name="alamat"/>
+                <field name="gaji"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- toko.pegawai form view -->
+    <record id="toko_pegawai_view_form" model="ir.ui.view">
+        <field name="name">Form Pegawai</field>
+        <field name="model">toko.pegawai</field>
+        <field name="arch" type="xml">
+            <form string="">
+                <sheet>
+                    <group>
+                        <!-- Add your fields here -->
+                        <field name="name"/>
+                        <field name="no_telp"/>
+                        <field name="alamat"/>
+                        <field name="gaji"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- toko.pegawai action window -->
+    <record id="toko_pegawai_action" model="ir.actions.act_window">
+        <field name="name">List Pegawai</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">toko.pegawai</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- This Menu Item must have a parent and an action -->
+    <menuitem 
+        id="toko_pegawai_menu_act" 
+        name="Pegawai" 
+        parent="pegawai_menu_categ" 
+        action="toko_pegawai_action" 
+        sequence="20"/>
+
+</odoo>

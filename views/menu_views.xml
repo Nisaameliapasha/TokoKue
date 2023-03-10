@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    
+    <!-- This Menu Item will appear in the Upper bar, that's why It needs NO parent or action -->
+    <menuitem 
+        id="toko_menu_root" 
+        name="Toko Kue" 
+        sequence="10"/>
+
+    <!-- This Menu Item Must have a parent -->
+    <menuitem 
+        id="pegawai_menu_categ"
+        name="Pegawai" 
+        parent="toko_menu_root" 
+        sequence="10"/>
+
+    <!-- This Menu Item Must have a parent -->
+    <menuitem 
+        id="kue_menu_categ"
+        name="Kue" 
+        parent="toko_menu_root" 
+        sequence="10"/>
+
+    <!-- This Menu Item Must have a parent -->
+    <menuitem 
+        id="bahan_menu_categ" 
+        name="Bahan" 
+        parent="toko_menu_root" 
+        sequence="20"/>
+
+    <!-- This Menu Item Must have a parent -->
+    <menuitem 
+        id="production_menu_categ" 
+        name="Production" 
+        parent="toko_menu_root" 
+        sequence="30"/>
+    
+    <!-- This Menu Item Must have a parent -->
+    <menuitem 
+        id="customer_menu_categ" 
+        name="Customer" 
+        parent="toko_menu_root" 
+        sequence="40"/>
+
+    <!-- This Menu Item Must have a parent -->
+    <menuitem 
+        id="pesanan_menu_categ"
+        name="Pesanan" 
+        parent="toko_menu_root" 
+        sequence="50"/>
+
+</odoo>

@@ -1,0 +1,11 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_toko_beli_bahan,access.toko.beli_bahan,model_toko_beli_bahan,,1,1,1,1
+access_toko_buat_kue,access.toko.buat_kue,model_toko_buat_kue,,1,1,1,1
+access_toko_bahan_produksi,access.toko.bahan_produksi,model_toko_bahan_produksi,,1,1,1,1
+access_toko_chef,access.toko.chef,model_toko_chef,,1,1,1,1
+access_toko_customer,access.toko.customer,model_toko_customer,,1,1,1,1
+access_toko_bahan,access.toko.bahan,model_toko_bahan,,1,1,1,1
+access_toko_pegawai,access.toko.pegawai,model_toko_pegawai,,1,1,1,1
+access_toko_kue,access.toko.kue,model_toko_kue,,1,1,1,1
+access_toko_pesan,access.toko.pesan,model_toko_pesan,,1,1,1,1
+access_toko_pesandetail,access.toko.pesandetail,model_toko_pesandetail,,1,1,1,1
